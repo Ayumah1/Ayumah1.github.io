@@ -1,0 +1,300 @@
+/*custom styles for the portfolio*/
+body{
+    font-family:'Poppins', sans-serif ;
+    line-height: 2;
+    color: var(--dark-color);
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.hero-title {
+    background: #1a252f; /* Dark background for hero */
+    color: white;
+    padding: 3rem 0;
+}
+
+.hero-title h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.hero-title p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.about-content {
+    background: #f8f9fa; /* Light gray for About content */
+    padding: 3rem 0;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile-img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.about-text {
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Skills Overview Styling */
+.skill-overview {
+    display: flex;
+    align-items: center; /* Center vertically */
+    min-height: 80px; /* Ensure enough space for centering */
+    padding: 0.5rem 0; /* Add padding to the visual balance */
+}
+
+.skill-icon {
+    width: 30px; /* Slightly smaller to match screenshot proportions */
+    height: auto;
+    margin-right: 1rem; /* Space between icon and text */
+}
+
+.skill-overview-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0.25rem;
+}
+
+.skill-overview-description {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Project Section Styling */
+#projects {
+    padding: 3rem 0;
+}
+
+#projects h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#projects .card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#projects .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#projects .card-body {
+    padding: 1.5rem;
+}
+
+#projects .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#projects .card-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+#projects .modal-body h6 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#projects .modal-body p, #projects .modal-body ul {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+#projects .modal-body .img-fluid {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-video {
+    width: 100%;
+    max-width: 500px; /* Keep video small and centered */
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#skills {
+    background: #ffffff; /* White background for contrast */
+}
+
+#skills h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-item p {
+    margin-bottom: 0.5rem;
+    font-weight: 200;
+}
+
+.progress {
+    height: 0.8rem;
+    background-color: #e9ecef;
+}
+
+.progress-skill-1 .progress-bar {
+    background-color: #dc3545; /* Red for Python */
+}
+
+.progress-skill-2 .progress-bar {
+    background-color: #20c997; /* Teal for SQL */
+}
+
+.progress-skill-3 .progress-bar {
+    background-color: #fd7e14; /* Orange for Power BI/Tableau */
+}
+
+.progress-skill-4 .progress-bar {
+    background-color: #6f42c1; /* Purple for Excel */
+}
+
+.progress-skill-5 .progress-bar {
+    background-color: #28a745; /* Green for Data Cleaning */
+}
+
+.progress-skill-6 .progress-bar {
+    background-color: #ffc107; /* Yellow for Data Storytelling */
+}
+
+@media (max-width: 768px) {
+    #skills h3 {
+        font-size: 1.2rem;
+    }
+    .skill-item p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tools Section Styling */
+#tools {
+    padding: 3rem 0;
+}
+
+#tools h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.tool-icon {
+    max-width: 50px; /* Match icon size */
+    height: auto;
+}
+
+.tool-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase; /* Match image */
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.tool-description {
+    font-size: 1rem;
+    color: #666; /* Lighter text */
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .hero-title h1 {
+        font-size: 2.5rem;
+    }
+    .hero-title p {
+        font-size: 1.2rem;
+    }
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    .about-content h3 {
+        font-size: 1.3rem;
+    }
+    .profile-img {
+        max-width: 150px;
+        margin-bottom: 1.5rem;
+    }
+    .about-content .row {
+        text-align: center;
+    }
+    .about-content .offset-md-1 {
+        margin-left: 0;
+    }
+    .about-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .skill-overview {
+        justify-content: center;
+    }
+    #projects h4 {
+        font-size: 1.5rem;
+    }
+    #projects .card-img-top {
+        height: 150px;
+    }
+    #projects .modal-body .img-fluid {
+        margin-bottom: 1rem;
+    }
+    .project-video {
+        max-width: 100%;
+    }
+    #tools h2 {
+        font-size: 1.5rem;
+    }
+    .tool-title {
+        font-size: 1.1rem;
+    }
+    .tool-description {
+        font-size: 0.9rem;
+    }
+}
